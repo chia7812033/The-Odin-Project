@@ -1,0 +1,28 @@
+body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+.one {
+    background-color: pink;
+    border: solid blue;
+    margin: 12px;
+}
+
+.one,
+.three {
+    padding: 32px;
+}
+
+.two {
+    margin-bottom: 48px;
+    background-color: lightblue;
+    border: solid purple;
+}
+
+.three {
+    background-color: peachpuff;
+    border: solid red;
+    width: 200px;
+    margin-left: auto;
+}
