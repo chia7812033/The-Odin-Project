@@ -7,13 +7,20 @@ body {
 .container {
     background-color: #1F2937;
     display: flex;
+    padding: auto 200px;
+    justify-content: center;
+}
+
+.container>div {
+    width: 800px;
+    display: flex;
     flex-direction: column;
 }
 
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 ul {
@@ -46,12 +53,13 @@ button {
     padding: 5px 30px;
     color: white;
     font-size: 18px;
+    margin-top: 12px;
 }
 
 .welcome-container {
     display: flex;
-    justify-content: space-evenly;
-    padding: 100px;
+    justify-content: space-between;
+    padding: 100px 0px;
 }
 
 .secondary-text {
@@ -59,12 +67,9 @@ button {
     font-size: 18px;
 }
 
-.welcome-image {
-    width: 500px;
-}
 
 .welcome-block {
-    width: 500px;
+    width: 350px;
 }
 
 .random-info {
@@ -85,6 +90,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 80px;
+    flex-wrap: wrap;
 }
 
 .info-box {
@@ -136,4 +142,36 @@ button {
     justify-content: center;
     color: #E5E7EB;
     padding: 20px;
+}
+
+.second-button {
+    border:#F9FAF8 2px solid;
+}
+
+.signup-box {
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.sign-up {
+    padding: 100px 200px;
+}
+
+.call-primary {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.call-secondary {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
 }
