@@ -12,6 +12,12 @@ buttons.forEach((button) => {
     })
 })
 
+const retryBtn = document.querySelector(".retry-btn");
+
+retryBtn.addEventListener('click', () => {
+    reset();
+})
+
 function getComputerChoice() {
     const choice = Math.floor(Math.random() * 3);
     return condition[choice];
@@ -42,12 +48,12 @@ function changeResult(win, playerSelection, computerSelection) {
     if (win === 1) {
         result.innerHTML = `You Win! ${playerSelection} beats ${computerSelection}`;
         playScore++;
-        playerScoreDiv = document.querySelector(".player-score").innerHTML = "Your score: " + parseInt(playScore);
+        document.querySelector(".player-score").innerHTML = "Your score: " + parseInt(playScore);
     }
     else if (win === 0) {
         result.innerHTML = `You Lose! ${computerSelection} beats ${playerSelection}`;
         pcScore++;
-        pcScoreDiv = document.querySelector(".pc-score").innerHTML = "Computer score: " + parseInt(pcScore);
+        document.querySelector(".pc-score").innerHTML = "Computer score: " + parseInt(pcScore);
     }
     else {
         result.innerHTML = `Tie!, ${computerSelection} and ${playerSelection}`;
@@ -58,8 +64,21 @@ function changeResult(win, playerSelection, computerSelection) {
 function findWinner() {
     if (playScore >= 5) {
         document.querySelector(".final-result").innerHTML = "You are final winner!!!"
+        retryBtn.style.visibility = "visible";
     }
     else if (pcScore >= 5) {
         document.querySelector(".final-result").innerHTML = "Computer is final winner!!!"
+        retryBtn.style.visibility = "visible";
     }
 }
+
+function reset() {
+    document.querySelector(".result").innerHTML = ""
+    document.querySelector(".final-result").innerHTML = ""
+    document.querySelector(".player-score").innerHTML = "Score: 0";
+    document.querySelector(".pc-score").innerHTML = "Score: 0";
+
+    retryBtn.style.visibility = "hidden";
+}
+
+
