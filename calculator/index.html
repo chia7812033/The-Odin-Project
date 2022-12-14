@@ -12,36 +12,37 @@
 <body>
     <div class="container">
         <div class="display">
+            <div class="sub-result"></div>
             <div class="result"></div>
         </div>
         <div class="buttons">
             <div class="row">
-                <button class="special-btn-red">Clear</button>
-                <button class="special-btn-black">Delete</button>
+                <button id="clear" class="special-btn-red">Clear</button>
+                <button id="delete" class="special-btn-black">Delete</button>
             </div>
             <div class="row">
                 <button class="number" data-n="7">7</button>
                 <button class="number" data-n="8">8</button>
                 <button class="number" data-n="9">9</button>
-                <button>/</button>
+                <button class="operator" data-o="/">/</button>
             </div>
             <div class="row">
                 <button class="number" data-n="4">4</button>
                 <button class="number" data-n="5">5</button>
                 <button class="number" data-n="6">6</button>
-                <button>x</button>
+                <button class="operator" data-o="x">x</button>
             </div>
             <div class="row">
                 <button class="number" data-n="1">1</button>
                 <button class="number" data-n="2">2</button>
                 <button class="number" data-n="3">3</button>
-                <button>-</button>
+                <button class="operator" data-o="-">-</button>
             </div>
             <div class="row">
-                <button>.</button>
+                <button class="number" data-n=".">.</button>
                 <button class="number" data-n="0">0</button>
-                <button>=</button>
-                <button>+</button>
+                <button class="equal">=</button>
+                <button class="operator" data-o="+">+</button>
             </div>
 
 

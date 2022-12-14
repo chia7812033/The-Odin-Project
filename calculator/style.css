@@ -25,8 +25,23 @@ body {
     background-color: bisque;
     border-radius: 4px;
     margin: 4px;
-    align-items: center;
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.result {
+    padding: 0;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sub-result {
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 button {
@@ -35,6 +50,8 @@ button {
     width: 80px;
     height: 80px;
     margin: 4px;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .special-btn-red {
