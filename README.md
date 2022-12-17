@@ -1,3 +1,3 @@
 # The Odin Project
 
-Some small projec from odin project
+Some small project from the odin project
