@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("fonts/Norse-Bold.otf");
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.right-container {
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2
+}
+
+.title {
+  font-family: "Norse Bold";
+  font-size: 156px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.4);
+}
+
+.gray-section {
+  background-color: aliceblue;
+}
+
+.title-image {
+  padding-top: 20px;
+}
+
+.title-image > img {
+  max-height: 150px;
+}
+
+.small-header {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+}
+
+.second-header {
+  margin-top: 1.5rem;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.sign-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+label {
+  letter-spacing: 0.1em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(39, 38, 38);
+  font-size: 12px;
+}
+
+input {
+  border-radius: 4px;
+  height: 30px;
+}
+
+input:active, input:focus {
+  border: 2px solid blue;
+  outline: none;
+  height: 30px;
+}
+
+.row {
+  display: flex;
+  padding-left: 70px;
+  padding-bottom: 20px;
+}
+
+.sign-block {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  flex-shrink: 1;
+  padding-right: 60px;
+}
+
+.last-row {
+  padding-bottom: 20px;
+}
+
+.button {
+  padding-top: 15px;
+  padding-left: 70px;
+}
+
+button {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  background-color: #596D48;
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.link {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  padding-left: 70px;
+  font-size: 16px;
+}
+
+a {
+  color: green;
+}
